@@ -16,28 +16,28 @@ A browser-based PDF annotation tool that enables real-time collaboration, text h
 
 ## 🧱 Folder Structure
 
-📁 public/ # Static assets (images, icons)
+📁 public/ # Static assets (images, icons) <br>
 ├── file.svg <br>
-├── globe.svg
-├── HeroImg.png
-├── next.svg
-├── vercel.svg
-├── window.svg
+├── globe.svg <br>
+├── HeroImg.png <br>
+├── next.svg <br>
+├── vercel.svg <br>
+├── window.svg <br>
 
-📁 src/
-└── 📁 app/
-├── layout.js # Root layout
-├── page.js # Homepage
-└── 📁 editor/
-├── page.js # Editor page
-├── favicon.ico
-├── globals.css # Global styles (Only tailwind imported)
+📁 src/ <br>
+└── 📁 app/ <br>
+├── layout.js # Root layout <br>
+├── page.js # Homepage <br>
+└── 📁 editor/ <br>
+├── page.js # Editor page <br>
+├── favicon.ico <br>
+├── globals.css # Global styles (Only tailwind imported) <br>
 
-└── 📁 components/   # Reusable UI sections
-    ├── CallToActionSection.js
-    ├── FeaturesSection.js
-    ├── Footer.js
-    └── HeroSection.js
+└── 📁 components/   # Reusable UI sections <br>
+    ├── CallToActionSection.js <br>
+    ├── FeaturesSection.js <br>
+    ├── Footer.js <br>
+    └── HeroSection.js <br>
 
 ## 🛠️ Tech Stack
 
