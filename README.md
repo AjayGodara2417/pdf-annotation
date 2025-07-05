@@ -17,7 +17,7 @@ A browser-based PDF annotation tool that enables real-time collaboration, text h
 ## 🧱 Folder Structure
 
 📁 public/ # Static assets (images, icons)
-├── file.svg
+├── file.svg <br>
 ├── globe.svg
 ├── HeroImg.png
 ├── next.svg
@@ -53,7 +53,7 @@ A browser-based PDF annotation tool that enables real-time collaboration, text h
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/pdf-annotation.git
+git clone https://github.com/AjayGodara2417/pdf-annotation
 cd pdf-annotation
 ```
 
