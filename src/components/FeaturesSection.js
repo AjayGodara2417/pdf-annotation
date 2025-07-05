@@ -11,34 +11,38 @@ export default function FeaturesSection() {
   const features = [
     {
       title: "Highlight Text",
-      description: "Easily highlight important sections of text with a variety of colors.",
-      icon: <Highlighter className="w-8 h-8 text-indigo-600" />,
+      description:
+        "Easily highlight important sections of text with a variety of colors.",
+      icon: <Highlighter className="w-10 h-10 text-indigo-600" />,
     },
     {
       title: "Add Comments",
-      description: "Add comments and annotations to specific parts of the document.",
-      icon: <MessageSquareCode className="w-8 h-8 text-indigo-600" />,
+      description:
+        "Leave comments and feedback anywhere in your PDF with simple inline notes.",
+      icon: <MessageSquareCode className="w-10 h-10 text-indigo-600" />,
     },
     {
       title: "Real-time Collaboration",
-      description: "Collaborate with team members in real-time on the same document.",
-      icon: <User className="w-8 h-8 text-indigo-600" />,
+      description:
+        "Work together with your team live — see annotations as they happen.",
+      icon: <User className="w-10 h-10 text-indigo-600" />,
     },
     {
       title: "Easy Sharing",
-      description: "Share your annotated PDFs with others via a shareable link.",
-      icon: <Share2Icon className="w-8 h-8 text-indigo-600" />,
+      description:
+        "Generate shareable links so anyone can view or comment on your file instantly.",
+      icon: <Share2Icon className="w-10 h-10 text-indigo-600" />,
     },
   ];
 
   return (
     <section className="bg-gray-50 py-20">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-extrabold text-left mb-4 text-gray-900">
+      <div className="max-w-6xl mx-auto px-4 text-center md:text-left">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
           Powerful Annotation Tools
         </h2>
-        <p className="text-left text-lg text-gray-700 mb-12 max-w-2xl">
-          Our browser-based PDF annotation tool offers a range of features to enhance your document review and collaboration process.
+        <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto md:mx-0">
+          Designed for seamless collaboration, clarity, and control — all within your browser.
         </p>
 
         {/* Feature Grid */}
@@ -46,23 +50,31 @@ export default function FeaturesSection() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-6 border shadow-md transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 animate-fade-up opacity-0 animate-delay-[200ms] animate-fill-forwards"
-              style={{ animationDelay: `${index * 200}ms` }}
+              className="bg-white rounded-2xl p-6 border shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-up opacity-0"
+              style={{ animationDelay: `${index * 150}ms` }}
             >
-              <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <div className="mb-4 flex justify-center md:justify-start">
+                <div className="bg-indigo-100 p-3 rounded-xl">
+                  {feature.icon}
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-gray-900">
+                {feature.title}
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Animation styles */}
+      {/* Animations */}
       <style jsx>{`
         @keyframes fade-up {
           0% {
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(30px);
           }
           100% {
             opacity: 1;
@@ -71,7 +83,7 @@ export default function FeaturesSection() {
         }
 
         .animate-fade-up {
-          animation: fade-up 5s ease-out forwards;
+          animation: fade-up 0.8s ease-out forwards;
         }
       `}</style>
     </section>
